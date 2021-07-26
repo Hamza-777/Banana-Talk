@@ -22,7 +22,7 @@ body {
 nav {
     height: 100%;
     max-width: 1200px;
-    padding: 10px;
+    padding: 0.625em;
 }
 
 h1 {
@@ -40,13 +40,13 @@ h1 {
     justify-content: center;
     align-items: center;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 1.25em auto;
 }
 
 .to {
-    margin: 10px;
-    padding: 10px;
-    font-size: 16px;
+    margin: 0.625em;
+    padding: 0.625em;
+    font-size: 1em;
     font-weight: 700;
     color: #333;
     outline: none;
@@ -54,33 +54,33 @@ h1 {
 }
 
 .translate {
-    width: 140px;
-    height: 40px;
+    width: 8.75em;
+    height: 2.5em;
     margin: 5px;
     padding: 5px;
-    font-size: 20px;
+    font-size: 1.25em;
     cursor: pointer;
     border: 2px solid #f2c94c;
     color: #f2b90e;
     border-radius: 60% 40% / 50% 50%;
     background: #fff;
-    letter-spacing: 2px;
+    letter-spacing: 0.125em;
     font-weight: 800;
 }
 
 .scroll {
-    width: 750px;
-    height: 200px;
+    width: 46.875em;
+    height: 12.5em;
     overflow: scroll;
-    padding: 10px;
-    margin: 10px;
+    padding: 0.625em;
+    margin: 0.625em;
     background-color: #fff;
     border: 1px solid #333;
 }
 
 .text {
     color: #333;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 700;
     letter-spacing: 1.5px;
     text-align: left;
@@ -96,8 +96,22 @@ h1 {
 }
 
 p {
-    margin-top: 10px;
-    font-size: 16px;
+    margin-top: 0.625em;
+    font-size: 1em;
     font-weight: 700;
     color: #333;
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+
+    textarea {
+        width: 27em;
+    }
+
+    .scroll {
+        width: 27em;
+    }
 }
