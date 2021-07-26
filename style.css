@@ -114,4 +114,8 @@ p {
     .scroll {
         width: 27em;
     }
+
+    p {
+        width: 50ch;
+    }
 }
